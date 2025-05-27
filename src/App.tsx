@@ -49,7 +49,7 @@ function App() {
   return (
     <div className='grid bg-grey-200 place-content-center w-full h-dvh gap-10 justify-center content-center'>
       <h1 className='text-center text-grey-500 font-bold text-2xl'>S P L I<br/>T T E R</h1>
-      <div className='grid h-full gap-5 mb-0 bg-white rounded-t-2xl p-5 md:grid-cols-2 md:m-10'>
+      <div className='grid h-full gap-5 mb-0 max-w-4xl bg-white rounded-2xl p-5 md:grid-cols-2 md:m-10'>
         <div className='grid gap-5'>
           <div>
             <h5 className='text-grey-200'>Bill</h5>
@@ -64,7 +64,7 @@ function App() {
 
           <div>
             <h5>Select Tip %</h5>
-            <div className='grid grid-cols-2 gap-4'>
+            <div className='grid grid-cols-2 gap-4 md:grid-cols-3'>
               <button className={'tip ' + (tip === 5 ? "bg-green-400 text-black" : "")} id='5' 
               onClick={() => handleTipClick(5)}>5%</button>
               <button className={'tip ' + (tip === 10 ? "bg-green-400 text-black" : "")} id='10' 
