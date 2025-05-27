@@ -25,8 +25,27 @@
   }
 }
 
+.input-container {
+  position: relative;
+  
+}
+
+.input-container .icon {
+  position: absolute;
+  color: var(--color-grey-500);
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Platz für das Icon */
+  box-sizing: border-box;
+}
+
 .form-input {
-  background-color: hsl(152, 100%, 92%);
+  background-color: var(--color-grey-200); /* TODO: color-grey-50 */
   width: 100%;
   border-radius: 6px;
   padding: 10px;
@@ -35,6 +54,10 @@
   font-weight: 700;
   color: var(--color-green-900);
   
+}
+
+.active {
+  background-color: var(--color-green400);
 }
 
 h5 {
